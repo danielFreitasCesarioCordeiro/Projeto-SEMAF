@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/estilos.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
 </head>
 <body>
     <header> <img src="imagens/SemafLogo2.png" alt=""></header>
     <nav> <p>
-        <a href="#">Historia </a> 
-        <a href="#">Serviços</a> 
-        <a href="#">Equipamentos</a>
-        <a href="#">Contatos</a>
+        <a href="#historia">Historia </a> 
+        <a href="#servicos">Serviços</a> 
+        <a href="#equipamentos">Equipamentos</a>
+        <a href="#contatos">Contatos</a>
         </p></nav>
     <main>
-        <section id="ficha"> 
+        <section id="historia"> 
         <div class="historia">
             <h1>A historia da SEMAF</h1>
             <p>Com mais de duas décadas de dedicação à comunidade fidelense, a SEMAF (Serviços Funerários e Assistência Familiar) é referência em assistência familiar e serviços funerários em São Fidélis e região. Fundada com o compromisso de oferecer amparo e respeito às famílias nos momentos mais delicados, a SEMAF se consolidou como uma empresa séria, humana e inovadora.
@@ -27,7 +32,7 @@ No mesmo ano, a SEMAF deu mais um passo pioneiro ao conquistar a autorização d
 <br><br>
 Na SEMAF, acolhimento, ética e inovação caminham juntos para oferecer um atendimento humanizado, completo e de confiança. Estamos aqui para cuidar de você e da sua família — sempre.</p>
         </div>
-        <div class="servicos">
+        <div class="servicos" id="servicos">
             <h1>Os Nossos Serviços</h1>
                <div id="servicos-container">
                     <div class="projeto">
@@ -66,11 +71,25 @@ Na SEMAF, acolhimento, ética e inovação caminham juntos para oferecer um aten
                         </details>
                     </div></div>
         </div>
-        <div class="Equipamentos"></div>
-        <div class="contatos"></div>
+        <div class="Equipamentos" id="equipamentos"></div>
+        <div class="contatos" id="contatos"></div>
     </section>
        
     </main>
     <footer></footer>
+        <script>
+            // Animação suave ao clicar nos links do menu
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('nav a[href^="#"]').forEach(function(anchor) {
+                    anchor.addEventListener('click', function(e) {
+                        var target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            e.preventDefault();
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    });
+                });
+            });
+        </script>
 </body>
 </html>
