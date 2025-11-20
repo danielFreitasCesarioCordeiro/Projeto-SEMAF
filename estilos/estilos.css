@@ -1,0 +1,96 @@
+
+:root{
+    --cor0: #7D436A;
+    --cor1: #BBF2E8;
+    --cor2: #04BF8A;
+    --cor3: #56BFA1;
+    --cor4: #427C7C;
+    --cor5: #228278;
+    --cor6: #ffffff;
+    --cor7: #000000;
+    
+    --fonte-normal: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "santo", "cursive";
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor1);
+}
+header{
+    background-image: linear-gradient( to bottom, var(--cor1), var(--cor3));
+    padding: 50px;
+}
+header img{
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+nav{
+    background-color: var(--cor3);
+    padding-bottom: 10px;
+    text-align: center;
+}
+nav a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+main{
+    display: grid;
+    grid-template-columns: auto 70vw auto;
+    gap: 20px;
+    margin-top: 20px;
+}
+section#ficha{
+    background-color: var(--cor4);
+    padding: 20px;
+    border-radius: 8px;
+    grid-column: 2;
+}
+div.historia h1{
+    text-align: center;
+    color: var(--cor1);
+}
+div.historia p{
+    font-weight: bold;
+    color:var(--cor6)
+}
+#servicos-container{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+#servicos-container .projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--cor5);
+    padding: 10px;
+    border-radius: 8px;
+    border-left: solid var(--cor6);
+    margin-bottom: 10px;
+    transition: border-color 0.5s , border-width 0.5s;
+}
+#servicos-container .projeto:hover{
+    border-color: var(--cor0);
+    border-left-width: 15px;
+    cursor: pointer;
+}
+#servicos-container .foto{
+    width: 25%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+}
