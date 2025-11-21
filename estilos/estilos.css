@@ -208,7 +208,7 @@ div.servicos h1{
 
 #servicos-container .foto{
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 8px;
@@ -330,7 +330,7 @@ div.servicos h1{
     }
     
     #servicos-container .foto{
-        width: 40%;
+        width: 60%;
         max-width: none;
     }
     
@@ -419,7 +419,7 @@ div.servicos h1{
     }
     
     #servicos-container .foto{
-        width: 25%;
+        width: 70%;
     }
     
     #equipamentos-container{
@@ -433,7 +433,7 @@ div.servicos h1{
     }
     
     #equipamentos-container .foto{
-        width: 25%;
+        width: 60%;
     }
     
     .equipamentos-grid{
@@ -460,4 +460,147 @@ div.contatos p{
     color: var(--cor6);
     font-size: 0.9rem;
     line-height: 1.6;
+}
+
+/* ===== ESTILO BLOG - Eventos ===== */
+
+/* Eventos - Mobile */
+#evento, .evento{
+    background-color: var(--cor6);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#evento:hover, .evento:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.evento-imagem{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.evento-conteudo{
+    padding: 20px;
+}
+
+.evento-data{
+    display: inline-block;
+    background-color: var(--cor3);
+    color: var(--cor6);
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.evento-titulo{
+    color: var(--cor4);
+    font-size: 1.5rem;
+    margin: 10px 0;
+    line-height: 1.3;
+}
+
+.evento-resumo{
+    color: var(--cor7);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.evento-categoria{
+    display: inline-block;
+    background-color: var(--cor0);
+    color: var(--cor6);
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.evento-link{
+    display: inline-block;
+    color: var(--cor3);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.evento-link:hover{
+    color: var(--cor0);
+}
+
+.evento-autor{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.evento-autor-foto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.evento-autor-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.evento-autor-nome{
+    font-weight: bold;
+    color: var(--cor4);
+    font-size: 0.9rem;
+}
+
+.evento-autor-cargo{
+    color: #888;
+    font-size: 0.8rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .evento-imagem{
+        height: 280px;
+    }
+    
+    .evento-titulo{
+        font-size: 1.8rem;
+    }
+    
+    .evento-conteudo{
+        padding: 25px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .evento-imagem{
+        height: 350px;
+    }
+    
+    .evento-titulo{
+        font-size: 2rem;
+    }
+    
+    .evento-conteudo{
+        padding: 30px;
+    }
+    
+    .evento-resumo{
+        font-size: 1.1rem;
+    }
 }

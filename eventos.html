@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Eventos e Notícias - SEMAF</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        #eventos-lista {
+            background-color: var(--cor4);
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .eventos-titulo-principal {
+            text-align: center;
+            color: var(--cor1);
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        
+        .navbar {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .navbar a {
+            color: var(--cor1);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .navbar a:hover {
+            background-color: var(--cor0);
+        }
+        
+        @media screen and (min-width: 768px) {
+            #eventos-lista {
+                padding: 40px;
+            }
+            
+            .eventos-titulo-principal {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media screen and (min-width: 1024px) {
+            main {
+                display: grid;
+                grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+                gap: 20px;
+                margin-top: 20px;
+                padding: 0;
+            }
+            
+            #eventos-lista {
+                grid-column: 2;
+                padding: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><img src="imagens/SemafLogo2.png" alt="SEMAF Logo"></header>
+    <nav>
+        <div class="navbar">
+            <a href="index.html">← Voltar para Home</a>
+        </div>
+    </nav>
+    <main>
+        <section id="eventos-lista">
+            <h1 class="eventos-titulo-principal">Eventos e Sorteios SEMAF</h1>
+            
+            <div class="evento">
+                <img src="imagens/SemafLogo2.png" alt="Sorteio Natal" class="evento-imagem">
+                <div class="evento-conteudo">
+                    <span class="evento-data">15 Dez 2025</span>
+                    <h2 class="evento-titulo">Grande Sorteio de Natal SEMAF 2025</h2>
+                    <p class="evento-resumo">Participe do nosso tradicional sorteio de Natal! Prêmios incríveis incluindo cestas básicas, eletrodomésticos e vouchers de compras. Todos os associados da SEMAF concorrem automaticamente. Sorteio será realizado no dia 20 de dezembro, às 18h, em nossa sede.</p>
+                    <span class="evento-categoria">Sorteio</span>
+                    <span class="evento-categoria">Natal</span>
+                    <a href="#" class="evento-link">Saiba como participar →</a>
+                    <div class="evento-autor">
+                        <div class="evento-autor-info">
+                            <span class="evento-autor-nome">SEMAF</span>
+                            <span class="evento-autor-cargo">Organização de Eventos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evento">
+                <img src="imagens/SemafLogo2.png" alt="Festa Junina" class="evento-imagem">
+                <div class="evento-conteudo">
+                    <span class="evento-data">22 Jun 2025</span>
+                    <h2 class="evento-titulo">Festa Junina SEMAF - Arraiá da Solidariedade</h2>
+                    <p class="evento-resumo">Venha celebrar conosco a nossa Festa Junina! Comidas típicas, quadrilha, pescaria, bingo e muito mais. Toda a renda será revertida para melhorias em nossos serviços à comunidade. Entrada gratuita para associados e familiares. Local: Praça Central de São Fidélis.</p>
+                    <span class="evento-categoria">Festa</span>
+                    <span class="evento-categoria">Beneficente</span>
+                    <a href="#" class="evento-link">Confira a programação →</a>
+                    <div class="evento-autor">
+                        <div class="evento-autor-info">
+                            <span class="evento-autor-nome">SEMAF</span>
+                            <span class="evento-autor-cargo">Comissão de Eventos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evento">
+                <img src="imagens/SemafLogo2.png" alt="Aniversário" class="evento-imagem">
+                <div class="evento-conteudo">
+                    <span class="evento-data">05 Mar 2026</span>
+                    <h2 class="evento-titulo">Festa de Aniversário - 25 Anos SEMAF</h2>
+                    <p class="evento-resumo">Celebre conosco 25 anos de história! Uma grande festa com shows ao vivo, sorteios especiais, homenagens e momentos emocionantes. Sorteio de prêmios exclusivos para associados, incluindo viagens e eletroeletrônicos. Traje: Casual Elegante. Convites limitados!</p>
+                    <span class="evento-categoria">Festa</span>
+                    <span class="evento-categoria">Aniversário</span>
+                    <a href="#" class="evento-link">Reserve seu convite →</a>
+                    <div class="evento-autor">
+                        <div class="evento-autor-info">
+                            <span class="evento-autor-nome">SEMAF</span>
+                            <span class="evento-autor-cargo">Direção</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evento">
+                <img src="imagens/SemafLogo2.png" alt="Bazar" class="evento-imagem">
+                <div class="evento-conteudo">
+                    <span class="evento-data">10 Set 2025</span>
+                    <h2 class="evento-titulo">Bazar Beneficente e Sorteio Especial</h2>
+                    <p class="evento-resumo">Grande Bazar com roupas, artesanato, produtos novos e seminovos a preços promocionais! Haverá também sorteio de brindes durante todo o evento. Participe e concorra a cestas de café da manhã, vouchers e muito mais. Toda a renda será destinada a ações sociais da SEMAF.</p>
+                    <span class="evento-categoria">Bazar</span>
+                    <span class="evento-categoria">Sorteio</span>
+                    <a href="#" class="evento-link">Veja os produtos →</a>
+                    <div class="evento-autor">
+                        <div class="evento-autor-info">
+                            <span class="evento-autor-nome">SEMAF</span>
+                            <span class="evento-autor-cargo">Serviço Social</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
