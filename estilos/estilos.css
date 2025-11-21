@@ -319,6 +319,7 @@ div.servicos h1{
 /* ===== DESKTOP - Media Query para telas grandes (1024px+) ===== */
 @media screen and (min-width: 1024px) {
     body{
+        background-color: var(--cor1);
         padding-top: 240px;
     }
     
