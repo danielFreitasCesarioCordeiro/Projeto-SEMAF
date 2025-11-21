@@ -185,14 +185,7 @@ div.servicos h1{
     gap: 15px;
 }
 
-#servicos-container{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-#servicos-container .projeto{
+.servico-card{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -203,13 +196,13 @@ div.servicos h1{
     transition: border-color 0.5s, border-width 0.5s;
 }
 
-#servicos-container .projeto:hover{
+.servico-card:hover{
     border-color: var(--cor0);
     border-left-width: 8px;
     cursor: pointer;
 }
 
-#servicos-container .foto{
+.servico-card .foto{
     width: 100%;
     max-width: 500px;
     aspect-ratio: 16/9;
@@ -219,6 +212,14 @@ div.servicos h1{
 }
 
 /* Equipamentos - Mobile */
+div.Equipamentos h1{
+    text-align: center;
+    color: var(--cor1);
+    font-size: 1.5rem;
+    margin: 20px 0 15px 0;
+    font-family: var(--fonte-destaque);
+}
+
 .equipamentos-grid{
     display: flex;
     flex-direction: column;
@@ -320,19 +321,17 @@ div.servicos h1{
         font-size: 1.8rem;
     }
     
+    div.Equipamentos h1{
+        font-size: 1.8rem;
+    }
+    
     .servicos-grid{
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        flex-wrap: wrap;
     }
     
-    #servicos-container{
-        flex: 1;
-        min-width: 300px;
-    }
-    
-    #servicos-container .foto{
+    .servico-card .foto{
         width: 60%;
         max-width: none;
     }
@@ -399,29 +398,27 @@ div.servicos h1{
         font-size: 2rem;
     }
     
+    div.Equipamentos h1{
+        font-size: 2rem;
+    }
+    
     .servicos-grid{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
     
-    #servicos-container{
-        flex: 1;
-        gap: 20px;
-    }
-    
-    #servicos-container .projeto{
+    .servico-card{
         gap: 25px;
         padding: 10px;
         border-left-width: 5px;
     }
     
-    #servicos-container .projeto:hover{
+    .servico-card:hover{
         border-left-width: 15px;
     }
     
-    #servicos-container .foto{
+    .servico-card .foto{
         width: 70%;
     }
     
