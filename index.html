@@ -166,12 +166,24 @@ Na SEMAF, acolhimento, ética e inovação caminham juntos para oferecer um aten
         <script>
             // Animação suave ao clicar nos links do menu
             document.addEventListener('DOMContentLoaded', function() {
+                // Altura do header + nav fixo
+                var headerHeight = document.querySelector('header').offsetHeight;
+                var navHeight = document.querySelector('nav').offsetHeight;
+                var offset = headerHeight + navHeight + 10; // 10px de espaço extra
+                
                 document.querySelectorAll('nav a[href^="#"]').forEach(function(anchor) {
                     anchor.addEventListener('click', function(e) {
-                        var target = document.querySelector(this.getAttribute('href'));
+                        e.preventDefault();
+                        var targetId = this.getAttribute('href');
+                        var target = document.querySelector(targetId);
+                        
                         if (target) {
-                            e.preventDefault();
-                            target.scrollIntoView({ behavior: 'smooth' });
+                            var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                            
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
                         }
                     });
                 });
