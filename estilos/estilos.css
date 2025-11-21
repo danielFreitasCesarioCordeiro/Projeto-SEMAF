@@ -22,13 +22,13 @@
 
 body{
     background-color: var(--cor1);
-    padding-top: 115px;
+    padding-top: 105px;
 }
 
 /* Header - Mobile */
 header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
-    padding: 15px;
+    padding: 10px 15px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -39,7 +39,7 @@ header{
 
 header img{
     display: block;
-    max-width: 200px;
+    max-width: 180px;
     width: 100%;
     margin: auto;
 }
@@ -50,7 +50,7 @@ nav{
     padding: 10px 15px;
     text-align: center;
     position: fixed;
-    top: 60px;
+    top: 50px;
     left: 0;
     right: 0;
     z-index: 999;
