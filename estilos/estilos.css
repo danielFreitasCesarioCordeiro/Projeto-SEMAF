@@ -321,3 +321,22 @@ div.servicos h1{
         width: 25%;
     }
 }
+div.contatos{
+    width: 200px;
+    background-color: var(--cor0);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+div.contatos h1{
+    text-align: center;
+    color: var(--cor1);
+    font-size: 1.5rem;
+    margin: 20px 0 15px 0;
+}
+div.contatos p{
+    text-align: center;
+    font-weight: bold;
+    color: var(--cor6);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
