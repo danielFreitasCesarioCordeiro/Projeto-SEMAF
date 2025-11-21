@@ -22,13 +22,13 @@
 
 body{
     background-color: var(--cor1);
-    padding-top: 135px;
+    padding-top: 115px;
 }
 
 /* Header - Mobile */
 header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -50,7 +50,7 @@ nav{
     padding: 10px 15px;
     text-align: center;
     position: fixed;
-    top: 76px;
+    top: 60px;
     left: 0;
     right: 0;
     z-index: 999;
@@ -110,6 +110,17 @@ nav{
 
 .menu-content.active{
     max-height: 400px;
+}
+
+.menu-content a{
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-content.active a{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 nav a{
