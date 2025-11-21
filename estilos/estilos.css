@@ -159,6 +159,7 @@ div.historia h1{
     color: var(--cor1);
     font-size: 1.5rem;
     margin-bottom: 15px;
+    font-family: var(--fonte-destaque);
 }
 
 div.historia p{
@@ -166,6 +167,7 @@ div.historia p{
     color: var(--cor6);
     font-size: 0.9rem;
     line-height: 1.6;
+    font-family: var(--fonte-normal);
 }
 
 /* Serviços - Mobile */
@@ -174,6 +176,7 @@ div.servicos h1{
     color: var(--cor1);
     font-size: 1.5rem;
     margin: 20px 0 15px 0;
+    font-family: var(--fonte-destaque);
 }
 
 .servicos-grid{
@@ -453,6 +456,7 @@ div.contatos h1{
     color: var(--cor1);
     font-size: 1.5rem;
     margin: 20px 0 15px 0;
+    font-family: var(--fonte-destaque);
 }
 div.contatos p{
     text-align: center;
@@ -460,6 +464,7 @@ div.contatos p{
     color: var(--cor6);
     font-size: 0.9rem;
     line-height: 1.6;
+    font-family: var(--fonte-normal);
 }
 
 /* ===== ESTILO BLOG - Eventos ===== */
@@ -506,6 +511,7 @@ div.contatos p{
     font-size: 1.5rem;
     margin: 10px 0;
     line-height: 1.3;
+    font-family: var(--fonte-destaque);
 }
 
 .evento-resumo{
@@ -513,6 +519,7 @@ div.contatos p{
     font-size: 1rem;
     line-height: 1.6;
     margin: 15px 0;
+    font-family: var(--fonte-normal);
 }
 
 .evento-categoria{
