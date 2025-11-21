@@ -176,6 +176,12 @@ div.servicos h1{
     margin: 20px 0 15px 0;
 }
 
+.servicos-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 #servicos-container{
     display: flex;
     flex-direction: column;
@@ -210,6 +216,12 @@ div.servicos h1{
 }
 
 /* Equipamentos - Mobile */
+.equipamentos-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 #equipamentos-container{
     display: flex;
     flex-direction: column;
@@ -305,6 +317,18 @@ div.servicos h1{
         font-size: 1.8rem;
     }
     
+    .servicos-grid{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    #servicos-container{
+        flex: 1;
+        min-width: 300px;
+    }
+    
     #servicos-container .foto{
         width: 40%;
         max-width: none;
@@ -313,6 +337,12 @@ div.servicos h1{
     #equipamentos-container .foto{
         width: 40%;
         max-width: none;
+    }
+    
+    .equipamentos-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
@@ -366,7 +396,15 @@ div.servicos h1{
         font-size: 2rem;
     }
     
+    .servicos-grid{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
     #servicos-container{
+        flex: 1;
         gap: 20px;
     }
     
@@ -396,6 +434,12 @@ div.servicos h1{
     
     #equipamentos-container .foto{
         width: 25%;
+    }
+    
+    .equipamentos-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 div.contatos{
