@@ -13,12 +13,19 @@
 </head>
 <body>
     <header> <img src="imagens/SemafLogo2.png" alt=""></header>
-    <nav> <p>
-        <a href="#ficha">Historia </a> 
-        <a href="#servicos">Serviços</a> 
-        <a href="#equipamentos">Equipamentos</a>
-        <a href="#contatos">Contatos</a>
-        </p></nav>
+    <nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu-content" id="menuContent">
+            <a href="#ficha">Historia </a> 
+            <a href="#servicos">Serviços</a> 
+            <a href="#equipamentos">Equipamentos</a>
+            <a href="#contatos">Contatos</a>
+        </div>
+    </nav>
     <main>
         <section id="ficha"> 
         <div class="historia">
@@ -164,18 +171,32 @@ Na SEMAF, acolhimento, ética e inovação caminham juntos para oferecer um aten
     </main>
     <footer></footer>
         <script>
-            // Animação suave ao clicar nos links do menu
             document.addEventListener('DOMContentLoaded', function() {
-                // Altura do header + nav fixo
+                var menuToggle = document.getElementById('menuToggle');
+                var menuContent = document.getElementById('menuContent');
+                
+                // Toggle do menu hambúrguer
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    menuContent.classList.toggle('active');
+                });
+                
+                // Animação suave ao clicar nos links do menu
                 var headerHeight = document.querySelector('header').offsetHeight;
                 var navHeight = document.querySelector('nav').offsetHeight;
-                var offset = headerHeight + navHeight + 10; // 10px de espaço extra
+                var offset = headerHeight + navHeight + 10;
                 
                 document.querySelectorAll('nav a[href^="#"]').forEach(function(anchor) {
                     anchor.addEventListener('click', function(e) {
                         e.preventDefault();
                         var targetId = this.getAttribute('href');
                         var target = document.querySelector(targetId);
+                        
+                        // Fecha o menu após clicar em mobile
+                        if (window.innerWidth < 768) {
+                            menuToggle.classList.remove('active');
+                            menuContent.classList.remove('active');
+                        }
                         
                         if (target) {
                             var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;

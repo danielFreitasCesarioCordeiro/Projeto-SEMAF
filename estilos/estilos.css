@@ -57,10 +57,55 @@ nav{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav p{
+/* Botão Hambúrguer - Mobile */
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    margin: 0 auto;
+}
+
+.menu-toggle span{
+    width: 100%;
+    height: 3px;
+    background-color: var(--cor1);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Menu Content - Mobile */
+.menu-content{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0;
+}
+
+.menu-content.active{
+    max-height: 300px;
+    padding-top: 15px;
 }
 
 nav a{
@@ -195,10 +240,20 @@ div.servicos h1{
         top: 117px;
     }
     
-    nav p{
+    /* Esconde o botão hambúrguer em tablet/desktop */
+    .menu-toggle{
+        display: none;
+    }
+    
+    /* Menu sempre visível em tablet/desktop */
+    .menu-content{
+        display: flex;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+        max-height: none;
+        overflow: visible;
+        padding: 0;
     }
     
     nav a{
