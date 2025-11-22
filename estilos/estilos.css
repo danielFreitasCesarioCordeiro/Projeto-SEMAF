@@ -127,7 +127,7 @@ nav a{
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: var(--cor1);
+    color: var(--cor6);
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
@@ -137,7 +137,7 @@ nav a{
 
 nav a:hover{
     background-color: var(--cor0);
-    color: var(--cor1);
+    color: var(--cor6);
 }
 
 /* Main - Mobile */
@@ -156,7 +156,7 @@ section#ficha{
 /* História - Mobile */
 div.historia h1{
     text-align: center;
-    color: var(--cor1);
+    color: var(--cor6);
     font-size: 1.5rem;
     margin-bottom: 15px;
     font-family: var(--fonte-destaque);
@@ -173,7 +173,7 @@ div.historia p{
 /* Serviços - Mobile */
 div.servicos h1{
     text-align: center;
-    color: var(--cor1);
+    color: var(--cor6);
     font-size: 1.5rem;
     margin: 20px 0 15px 0;
     font-family: var(--fonte-destaque);
@@ -214,7 +214,7 @@ div.servicos h1{
 /* Equipamentos - Mobile */
 div.Equipamentos h1{
     text-align: center;
-    color: var(--cor1);
+    color: var(--cor6);
     font-size: 1.5rem;
     margin: 20px 0 15px 0;
     font-family: var(--fonte-destaque);
@@ -256,7 +256,7 @@ div.Equipamentos h1{
 /* PARCEIROS */
 div.parceiros h1{
     text-align: center;
-    color: var(--cor1);
+    color: var(--cor6);
     font-size: 1.5rem;
     margin: 20px 0 15px 0;
     font-family: var(--fonte-destaque);
@@ -297,14 +297,14 @@ div.parceiros h1{
 }
 
 .parceiro-card .titulo{
-    color: var(--cor0);
+    color: var(--cor6);
     font-size: 1.2rem;
     margin-bottom: 8px;
     font-family: var(--fonte-destaque);
 }
 
 .parceiro-card .especialidade{
-    color: var(--cor1);
+    color: var(--cor6);
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 8px;
@@ -543,7 +543,7 @@ div.contatos{
 }
 div.contatos h1{
     text-align: center;
-    color: var(--cor1);
+    color: var(--cor6);
     font-size: 1.5rem;
     margin: 20px 0 15px 0;
     font-family: var(--fonte-destaque);
@@ -597,7 +597,7 @@ div.contatos p{
 }
 
 .evento-titulo{
-    color: var(--cor4);
+    color: var(--cor6);
     font-size: 1.5rem;
     margin: 10px 0;
     line-height: 1.3;
@@ -605,7 +605,7 @@ div.contatos p{
 }
 
 .evento-resumo{
-    color: var(--cor7);
+    color: var(--cor6);
     font-size: 1rem;
     line-height: 1.6;
     margin: 15px 0;
@@ -625,7 +625,7 @@ div.contatos p{
 
 .evento-link{
     display: inline-block;
-    color: var(--cor3);
+    color: var(--cor6);
     text-decoration: none;
     font-weight: bold;
     margin-top: 15px;
@@ -633,7 +633,7 @@ div.contatos p{
 }
 
 .evento-link:hover{
-    color: var(--cor0);
+    color: var(--cor6);
 }
 
 .evento-autor{
@@ -659,7 +659,7 @@ div.contatos p{
 
 .evento-autor-nome{
     font-weight: bold;
-    color: var(--cor4);
+    color: var(--cor6);
     font-size: 0.9rem;
 }
 
