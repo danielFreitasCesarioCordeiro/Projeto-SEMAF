@@ -253,6 +253,54 @@ div.Equipamentos h1{
     margin: 0 auto;
 }
 
+/* PARCEIROS */
+div.parceiros h1{
+    text-align: center;
+    color: var(--cor1);
+    font-size: 1.5rem;
+    margin: 20px 0 15px 0;
+    font-family: var(--fonte-destaque);
+}
+
+.parceiros-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.parceiro-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor5);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.parceiro-card:hover{
+    border-color: var(--cor0);
+    border-left-width: 8px;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.parceiro-card .titulo{
+    color: var(--cor0);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: var(--fonte-destaque);
+}
+
+.parceiro-card .descricao{
+    color: var(--cor6);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-family: var(--fonte-normal);
+}
+
 /* ===== TABLET - Media Query para telas médias (768px+) ===== */
 @media screen and (min-width: 768px) {
     body{
@@ -344,6 +392,16 @@ div.Equipamentos h1{
     .equipamentos-grid{
         display: grid;
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    div.parceiros h1{
+        font-size: 1.8rem;
+    }
+    
+    .parceiros-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 }
@@ -440,6 +498,24 @@ div.Equipamentos h1{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+    
+    div.parceiros h1{
+        font-size: 2rem;
+    }
+    
+    .parceiros-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    
+    .parceiro-card{
+        padding: 25px;
+    }
+    
+    .parceiro-card .titulo{
+        font-size: 1.3rem;
     }
 }
 div.contatos{
