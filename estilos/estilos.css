@@ -230,7 +230,7 @@ div.Equipamentos h1{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: var(--cor3);
+    background-color: var(--cor5);
     padding: 15px;
     border-radius: 8px;
     border-left: 4px solid var(--cor6);
@@ -278,6 +278,7 @@ div.parceiros h1{
     transition: all 0.3s ease;
     text-align: center;
 }
+
 
 .parceiro-card:hover{
     border-color: var(--cor0);
