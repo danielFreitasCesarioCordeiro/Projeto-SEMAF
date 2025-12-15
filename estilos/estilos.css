@@ -467,7 +467,7 @@ div.parceiros h1{
 @media screen and (min-width: 1024px) {
     body{
         background-color: var(--cor1);
-        padding-top: 240px;
+        padding-top: 200px;
     }
     
     header{
