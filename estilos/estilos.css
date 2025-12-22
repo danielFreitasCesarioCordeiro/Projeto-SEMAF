@@ -209,6 +209,40 @@ div.servicos h1{
     margin: 0 auto;
 }
 
+.servico-card .projeto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.servico-card .projeto-info .titulo {
+    color: var(--cor6);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    margin: 0;
+}
+
+.servico-card .projeto-info p {
+    color: var(--cor6);
+    font-size: 0.95rem;
+    font-family: var(--fonte-normal);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.servico-card .projeto-info .descricao summary {
+    color: var(--cor6);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--fonte-normal);
+}
+
+.servico-card .projeto-info .descricao p {
+    color: var(--cor6);
+    margin-top: 10px;
+}
+
 /* Equipamentos - Mobile */
 div.Equipamentos h1{
     text-align: center;
@@ -251,6 +285,46 @@ div.Equipamentos h1{
     object-fit: cover;
     border-radius: 8px;
     margin: 0 auto;
+}
+
+#equipamentos-container .projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#equipamentos-container .projeto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#equipamentos-container .projeto-info .titulo {
+    color: var(--cor6);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    margin: 0;
+}
+
+#equipamentos-container .projeto-info p {
+    color: var(--cor6);
+    font-size: 0.95rem;
+    font-family: var(--fonte-normal);
+    margin: 0;
+    line-height: 1.5;
+}
+
+#equipamentos-container .projeto-info .descricao summary {
+    color: var(--cor6);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--fonte-normal);
+}
+
+#equipamentos-container .projeto-info .descricao p {
+    color: var(--cor6);
+    margin-top: 10px;
 }
 
 /* PARCEIROS */
