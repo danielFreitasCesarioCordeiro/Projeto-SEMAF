@@ -204,7 +204,7 @@ div.servicos h1{
     width: 100%;
     max-width: 500px;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
     margin: 0 auto;
 }
@@ -282,7 +282,7 @@ div.Equipamentos h1{
     width: 100%;
     max-width: 300px;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
     margin: 0 auto;
 }
