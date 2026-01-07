@@ -10,8 +10,8 @@
     --cor6: #ffffff;
     --cor7: #000000;
     
-    --fonte-normal: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: "santo", "cursive";
+    --fonte-normal: "PT Serif", serif;
+    --fonte-destaque: "bebas-neue", sans-serif;
 }
 
 *{
