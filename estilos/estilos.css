@@ -162,7 +162,7 @@ div.historia h1{
 }
 
 div.historia p{
-    font-weight: bold;
+    font-weight: normal;
     color: var(--cor6);
     font-size: 0.9rem;
     line-height: 1.6;
