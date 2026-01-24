@@ -426,6 +426,13 @@ div.parceiros h1{
     position: absolute;
     left: 5px;
 }
+.local-titulo {
+    font-family: var(--fonte-destaque);
+    color: var(--cor6);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
 
 /* ===== TABLET - Media Query para telas médias (768px+) ===== */
 @media screen and (min-width: 768px) {
