@@ -850,6 +850,17 @@ div.localizacao h1{
     color: var(--cor1);
 }
 
+.localizacao-info a{
+    color: var(--cor6);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.localizacao-info a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 .localizacao-mapa{
     border-radius: 8px;
     overflow: hidden;
@@ -881,6 +892,17 @@ div.contatos p{
     font-size: 0.9rem;
     line-height: 1.6;
     font-family: var(--fonte-normal);
+}
+
+div.contatos a{
+    color: var(--cor6);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+div.contatos a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 /* ===== ESTILO BLOG - Eventos ===== */
