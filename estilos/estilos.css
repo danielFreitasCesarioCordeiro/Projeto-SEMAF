@@ -851,7 +851,7 @@ div.localizacao h1{
 }
 
 .localizacao-info a{
-    color: var(--cor6);
+    color: var(--cor0);
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
