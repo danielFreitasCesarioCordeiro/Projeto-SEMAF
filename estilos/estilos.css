@@ -855,6 +855,10 @@ div.localizacao h1{
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
+.telefone{
+    color: var(--cor6);
+    text-decoration: none;
+}
 
 .localizacao-info a:hover{
     opacity: 0.8;
