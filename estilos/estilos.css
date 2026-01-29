@@ -356,6 +356,12 @@ div.parceiros h1{
     text-align: center;
 }
 
+.parceiro-info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
 
 .parceiro-card:hover{
     border-color: var(--cor0);
