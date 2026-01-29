@@ -798,6 +798,12 @@ div.parceiros h1{
     border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+    .carousel-container {
+        display: none !important;
+    }
+}
+
 /* LOCALIZAÇÃO */
 div.localizacao{
     padding: 20px 15px;
