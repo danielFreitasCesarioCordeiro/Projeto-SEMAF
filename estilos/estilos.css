@@ -715,10 +715,16 @@ div.parceiros h1{
 
 /* ===== CARROSEL - Mobile ===== */
 .carousel-container {
+    display: none;
     position: relative;
     width: 100%;
     overflow: hidden;
     margin: 10px 0;
+}
+
+#parceiroCarousel,
+#equipCarousel {
+    display: none;
 }
 
 .carousel-wrapper {
@@ -801,6 +807,17 @@ div.parceiros h1{
 @media screen and (min-width: 768px) {
     .carousel-container {
         display: none !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-container {
+        display: block;
+    }
+
+    #parceiroCarousel,
+    #equipCarousel {
+        display: block;
     }
 }
 
