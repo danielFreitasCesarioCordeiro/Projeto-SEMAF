@@ -432,6 +432,52 @@ div.parceiros h1{
     position: absolute;
     left: 5px;
 }
+
+/* GANHADORES */
+div.ganhadores h1{
+    text-align: center;
+    color: var(--cor6);
+    font-size: 1.5rem;
+    margin: 20px 0 15px 0;
+    font-family: var(--fonte-destaque);
+}
+
+.ganhadores-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.ganhador-card{
+    background-color: var(--cor5);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor1);
+    transition: all 0.3s ease;
+}
+
+.ganhador-card:hover{
+    border-color: var(--cor0);
+    border-left-width: 8px;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.ganhador-info .titulo{
+    color: var(--cor6);
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-family: var(--fonte-destaque);
+}
+
+.ganhador-info .premio,
+.ganhador-info .data{
+    color: var(--cor6);
+    font-size: 0.95rem;
+    font-family: var(--fonte-normal);
+    margin: 0;
+}
 .local-titulo {
     font-family: var(--fonte-destaque);
     color: var(--cor6);
@@ -575,6 +621,15 @@ div.parceiros h1{
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    div.ganhadores h1{
+        font-size: 1.8rem;
+    }
+
+    .ganhadores-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
     
     div.localizacao h1{
         font-size: 1.8rem;
@@ -683,6 +738,15 @@ div.parceiros h1{
     
     div.parceiros h1{
         font-size: 2rem;
+    }
+
+    div.ganhadores h1{
+        font-size: 2rem;
+    }
+
+    .ganhadores-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
     }
     
     .parceiros-grid{
