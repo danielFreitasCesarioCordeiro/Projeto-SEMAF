@@ -921,16 +921,26 @@ No SEMAF, acolhimento, ética e inovação caminham juntos para oferecer um aten
                     var items = wrapper.querySelectorAll('.carousel-item');
                     var currentIndex = 0;
                     var itemsPerView = 1;
+                    var totalPages = 1;
+
+                    function getItemsPerView() {
+                        if (carouselId === 'ganhadoresCarousel' && window.innerWidth >= 1024) {
+                            return 3;
+                        }
+                        return 1;
+                    }
                     
                     // Criar indicadores
                     function createIndicators() {
                         indicatorsContainer.innerHTML = '';
-                        for (var i = 0; i < items.length; i++) {
+                        itemsPerView = getItemsPerView();
+                        totalPages = Math.ceil(items.length / itemsPerView);
+                        for (var i = 0; i < totalPages; i++) {
                             var dot = document.createElement('div');
                             dot.className = 'carousel-dot';
                             if (i === 0) dot.classList.add('active');
                             dot.addEventListener('click', function() {
-                                scrollToIndex(i);
+                                scrollToPage(i);
                             });
                             indicatorsContainer.appendChild(dot);
                         }
@@ -939,9 +949,10 @@ No SEMAF, acolhimento, ética e inovação caminham juntos para oferecer um aten
                     // Atualizar indicadores
                     function updateIndicators() {
                         var dots = indicatorsContainer.querySelectorAll('.carousel-dot');
+                        var pageIndex = Math.floor(currentIndex / itemsPerView);
                         dots.forEach(function(dot, index) {
                             dot.classList.remove('active');
-                            if (index === currentIndex) {
+                            if (index === pageIndex) {
                                 dot.classList.add('active');
                             }
                         });
@@ -956,28 +967,37 @@ No SEMAF, acolhimento, ética e inovação caminham juntos para oferecer um aten
                         if (currentIndex < 0) {
                             currentIndex = items.length - 1;
                         }
-                        
+
                         var scrollAmount = items[currentIndex].offsetLeft - wrapper.scrollLeft;
                         wrapper.scrollBy({
                             left: scrollAmount,
                             behavior: 'smooth'
                         });
-                        
+
                         updateIndicators();
+                    }
+
+                    function scrollToPage(pageIndex) {
+                        itemsPerView = getItemsPerView();
+                        totalPages = Math.ceil(items.length / itemsPerView);
+                        if (pageIndex >= totalPages) pageIndex = 0;
+                        if (pageIndex < 0) pageIndex = totalPages - 1;
+                        var targetIndex = pageIndex * itemsPerView;
+                        scrollToIndex(targetIndex);
                     }
                     
                     // Event listeners para botões
                     if (leftBtn) {
                         leftBtn.addEventListener('click', function() {
-                            currentIndex--;
-                            scrollToIndex(currentIndex);
+                            itemsPerView = getItemsPerView();
+                            scrollToIndex(currentIndex - itemsPerView);
                         });
                     }
                     
                     if (rightBtn) {
                         rightBtn.addEventListener('click', function() {
-                            currentIndex++;
-                            scrollToIndex(currentIndex);
+                            itemsPerView = getItemsPerView();
+                            scrollToIndex(currentIndex + itemsPerView);
                         });
                     }
                     
@@ -996,6 +1016,11 @@ No SEMAF, acolhimento, ética e inovação caminham juntos para oferecer um aten
                         });
                         
                         currentIndex = closestIndex;
+                        updateIndicators();
+                    });
+
+                    window.addEventListener('resize', function() {
+                        createIndicators();
                         updateIndicators();
                     });
                     

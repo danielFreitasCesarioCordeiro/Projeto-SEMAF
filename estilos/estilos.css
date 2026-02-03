@@ -781,6 +781,14 @@ div.ganhadores h1{
     .localizacao-mapa iframe{
         height: 400px;
     }
+
+    .ganhadores-carousel .carousel-wrapper{
+        gap: 20px;
+    }
+
+    .ganhadores-carousel .carousel-item{
+        flex: 0 0 calc(33.333% - 14px);
+    }
 }
 
 /* ===== CARROSEL - Mobile ===== */
