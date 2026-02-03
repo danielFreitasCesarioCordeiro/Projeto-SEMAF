@@ -478,6 +478,14 @@ div.ganhadores h1{
     font-family: var(--fonte-normal);
     margin: 0;
 }
+
+.ganhadores-carousel{
+    display: block;
+}
+
+#ganhadoresCarousel{
+    display: block;
+}
 .local-titulo {
     font-family: var(--fonte-destaque);
     color: var(--cor6);
@@ -626,9 +634,12 @@ div.ganhadores h1{
         font-size: 1.8rem;
     }
 
-    .ganhadores-grid{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .ganhadores-carousel{
+        display: block !important;
+    }
+
+    #ganhadoresCarousel{
+        display: block !important;
     }
     
     div.localizacao h1{
@@ -742,11 +753,6 @@ div.ganhadores h1{
 
     div.ganhadores h1{
         font-size: 2rem;
-    }
-
-    .ganhadores-grid{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
     }
     
     .parceiros-grid{
