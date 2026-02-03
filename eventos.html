@@ -41,6 +41,41 @@
         .navbar a:hover {
             background-color: var(--cor0);
         }
+
+        .evento-imagens-combo {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .evento-imagens-coluna {
+            display: grid;
+            gap: 10px;
+        }
+
+        .evento-imagens-quad {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .evento-imagens-quad img,
+        .evento-imagens-coluna img {
+            width: 100%;
+            height: 180px;
+            display: block;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .evento-imagem {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
         
         @media screen and (min-width: 768px) {
             #eventos-lista {
@@ -49,6 +84,20 @@
             
             .eventos-titulo-principal {
                 font-size: 2.5rem;
+            }
+
+            .evento-imagens-combo {
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+
+            .evento-imagens-quad img,
+            .evento-imagens-coluna img {
+                height: 200px;
+            }
+
+            .evento-imagem {
+                height: 260px;
             }
         }
         
@@ -73,6 +122,20 @@
             .ganhadores-carousel .carousel-item {
                 flex: 0 0 calc(33.333% - 14px);
             }
+
+            .evento-imagens-combo {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .evento-imagens-quad img,
+            .evento-imagens-coluna img {
+                height: 220px;
+            }
+
+            .evento-imagem {
+                height: 280px;
+            }
         }
     </style>
 </head>
@@ -89,7 +152,18 @@
             <h1 class="eventos-titulo-principal">Eventos e Sorteios SEMAF</h1>
             
             <div class="evento">
-                <img src="imagens/capela.png" alt="Sorteio Natal" class="evento-imagem">
+                <div class="evento-imagens-combo">
+                    <div class="evento-imagens-coluna">
+                        <img src="imagens/capela.png" alt="Sorteio Natal - Capela" class="evento-imagem">
+                        <img src="imagens/lista.png" alt="Sorteio Natal - Lista de Ganhadores" class="evento-imagem">
+                    </div>
+                    <div class="evento-imagens-quad">
+                        <img src="imagens/sorteio01.png" alt="Sorteio Natal 01" class="evento-imagem">
+                        <img src="imagens/sorteio02.png" alt="Sorteio Natal 02" class="evento-imagem">
+                        <img src="imagens/sorteio03.png" alt="Sorteio Natal 03" class="evento-imagem">
+                        <img src="imagens/sorteio04.png" alt="Sorteio Natal 04" class="evento-imagem">
+                    </div>
+                </div>
                 <div class="evento-conteudo">
                     <span class="evento-data">15 Dez 2025</span>
                     <h2 class="evento-titulo">Grande Sorteio de Natal SEMAF 2025</h2>
@@ -143,7 +217,7 @@
             </div>
 
             <div class="evento">
-                <img src="imagens/lista.png" alt="Arrecadação para Doações" class="evento-imagem">
+                <img src="imagens/SemafLogo2.png" alt="Arrecadação para Doações" class="evento-imagem">
                 <div class="evento-conteudo">
                     <span class="evento-data">10 Set 2025</span>
                     <h2 class="evento-titulo">Arrecadação para Doações e Sorteio Especial</h2>
