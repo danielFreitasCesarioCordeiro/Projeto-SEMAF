@@ -56,6 +56,34 @@
             object-fit: contain;
             background-color: var(--cor6);
         }
+
+        .evento-galeria-sorteio {
+            display: flex;
+            gap: 0;
+            margin-bottom: 16px;
+        }
+
+        .galeria-coluna-esquerda {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            flex: 1;
+        }
+
+        .galeria-coluna-direita {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            flex: 1;
+        }
+
+        .evento-imagem-sorteio {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            object-fit: contain;
+            background-color: var(--cor6);
+        }
         
         @media screen and (min-width: 768px) {
             #eventos-lista {
@@ -63,7 +91,7 @@
             }
             
             .eventos-titulo-principal {
-                font-size: 2.5rem;
+                font-size: 2.5rem;  
             }
         }
         
@@ -104,12 +132,17 @@
             <h1 class="eventos-titulo-principal">Eventos e Sorteios SEMAF</h1>
             
             <div class="evento">
-                <div class="evento-galeria">
-                    <img src="imagens/lista.png" alt="Sorteio Natal - Lista" class="evento-imagem">
-                    <img src="imagens/sorteio01.png" alt="Sorteio Natal 01" class="evento-imagem">
-                    <img src="imagens/sorteio02.png" alt="Sorteio Natal 02" class="evento-imagem">
-                    <img src="imagens/sorteio03.png" alt="Sorteio Natal 03" class="evento-imagem">
-                    <img src="imagens/sorteio04.png" alt="Sorteio Natal 04" class="evento-imagem">
+                <div class="evento-galeria-sorteio">
+                    <div class="galeria-coluna-esquerda">
+                        <img src="imagens/capela.png" alt="Sorteio Natal - Capela" class="evento-imagem-sorteio">
+                        <img src="imagens/lista.png" alt="Sorteio Natal - Lista" class="evento-imagem-sorteio">
+                    </div>
+                    <div class="galeria-coluna-direita">
+                        <img src="imagens/sorteio01.png" alt="Sorteio Natal 01" class="evento-imagem-sorteio">
+                        <img src="imagens/sorteio02.png" alt="Sorteio Natal 02" class="evento-imagem-sorteio">
+                        <img src="imagens/sorteio03.png" alt="Sorteio Natal 03" class="evento-imagem-sorteio">
+                        <img src="imagens/sorteio04.png" alt="Sorteio Natal 04" class="evento-imagem-sorteio">
+                    </div>
                 </div>
                 <div class="evento-conteudo">
                     <span class="evento-data">15 Dez 2025</span>
