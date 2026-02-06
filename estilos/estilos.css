@@ -1183,3 +1183,83 @@ footer a{
 footer a:hover{
     color: var(--cor6);
 }
+/* ===== EMPRESAS PARCEIRAS ===== */
+.empresas-wrapper {
+    background-color: var(--cor4);
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.empresas-titulo {
+    text-align: center;
+    color: var(--cor1);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: var(--fonte-destaque);
+}
+
+.empresa-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.empresa-card {
+    background-color: var(--cor5);
+    border-left: 4px solid var(--cor1);
+    border-radius: 8px;
+    padding: 20px;
+    color: var(--cor6);
+    transition: all 0.3s ease;
+}
+
+.empresa-logo {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto 12px auto;
+    display: block;
+    object-fit: contain;
+}
+
+.empresa-card:hover {
+    border-left-width: 8px;
+    border-color: var(--cor0);
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.empresa-nome {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    font-family: var(--fonte-destaque);
+}
+
+.empresa-descricao {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--fonte-normal);
+}
+
+/* Responsivo - Tablet */
+@media screen and (min-width: 768px) {
+    .empresas-wrapper {
+        padding: 40px;
+    }
+
+    .empresas-titulo {
+        font-size: 2.4rem;
+    }
+
+    .empresa-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsivo - Desktop */
+@media screen and (min-width: 1024px) {
+    .empresa-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
