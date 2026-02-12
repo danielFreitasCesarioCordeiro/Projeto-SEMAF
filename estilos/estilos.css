@@ -983,6 +983,61 @@ div.localizacao h1{
     width: 100%;
 }
 
+/* PONTOS DE RECEBIMENTO */
+.pontos-recebimento{
+    padding: 20px 15px;
+    margin: 20px 0;
+}
+
+.pontos-recebimento .local-titulo{
+    text-align: center;
+    color: var(--cor6);
+    font-size: 1.5rem;
+    margin: 20px 0 30px 0;
+    font-family: var(--fonte-destaque);
+}
+
+.pontos-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.ponto-card{
+    background-color: var(--cor5);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor1);
+    border-top: 4px solid var(--cor1);
+}
+
+.ponto-titulo{
+    color: var(--cor1);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: var(--fonte-destaque);
+}
+
+.ponto-card p{
+    color: var(--cor6);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 8px 0;
+    font-family: var(--fonte-normal);
+}
+
+.ponto-card a{
+    color: var(--cor6);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.ponto-card a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 div.contatos{
     width: 200px;
     background-color: var(--cor0);
@@ -1261,5 +1316,18 @@ footer a:hover{
 @media screen and (min-width: 1024px) {
     .empresa-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* PONTOS DE RECEBIMENTO - Responsivo */
+@media screen and (min-width: 768px) {
+    .pontos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .pontos-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
