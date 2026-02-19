@@ -401,6 +401,25 @@ div.representante h1{
     font-family: var(--fonte-normal);
 }
 
+.representante-card .telefone{
+    color: var(--cor1);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 12px;
+    font-family: var(--fonte-normal);
+}
+
+.representante-card .telefone a{
+    color: var(--cor1);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.representante-card .telefone a:hover{
+    color: var(--cor0);
+    text-decoration: underline;
+}
+
 /* PARCEIROS */
 div.parceiros h1{
     text-align: center;
