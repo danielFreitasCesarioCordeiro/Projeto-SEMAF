@@ -328,6 +328,79 @@ div.Equipamentos h1{
     margin-top: 10px;
 }
 
+/* REPRESENTANTE DE VENDA */
+div.representante h1{
+    text-align: center;
+    color: var(--cor6);
+    font-size: 1.5rem;
+    margin: 20px 0 15px 0;
+    font-family: var(--fonte-destaque);
+}
+
+.representante-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.representante-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor5);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor1);
+    transition: all 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+}
+
+.representante-card:hover{
+    border-color: var(--cor0);
+    border-left-width: 8px;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.representante-foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0 auto 15px auto;
+    border: 4px solid var(--cor1);
+}
+
+.representante-info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.representante-card .titulo{
+    color: var(--cor6);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-family: var(--fonte-destaque);
+}
+
+.representante-card .cargo{
+    color: var(--cor6);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: var(--fonte-normal);
+}
+
+.representante-card .descricao{
+    color: var(--cor6);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-family: var(--fonte-normal);
+}
+
 /* PARCEIROS */
 div.parceiros h1{
     text-align: center;
@@ -606,6 +679,15 @@ div.ganhadores h1{
         gap: 20px;
     }
     
+    div.representante h1{
+        font-size: 1.8rem;
+    }
+    
+    .representante-container{
+        justify-content: center;
+        padding: 40px 20px;
+    }
+    
     div.parceiros h1{
         font-size: 1.8rem;
     }
@@ -745,6 +827,18 @@ div.ganhadores h1{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+    
+    div.representante h1{
+        font-size: 2rem;
+    }
+    
+    .representante-card{
+        max-width: 400px;
+    }
+    
+    .representante-card .titulo{
+        font-size: 1.3rem;
     }
     
     div.parceiros h1{
