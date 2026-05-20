@@ -588,19 +588,15 @@ div.ganhadores h1{
 /* ===== TABLET - Media Query para telas médias (768px+) ===== */
 @media screen and (min-width: 768px) {
     body{
-        padding-top: 200px;
+        padding-top: 150px;
     }
     
     header{
-        padding: 35px;
+        padding: 10px;
     }
     
     header img{
         max-width: 280px;
-    }
-    
-    nav{
-        top: 117px;
     }
     
     /* Esconde o botão hambúrguer em tablet/desktop */
@@ -758,19 +754,15 @@ div.ganhadores h1{
 @media screen and (min-width: 1024px) {
     body{
         background-color: var(--cor1);
-        padding-top: 200px;
+        padding-top: 250px;
     }
     
     header{
-        padding: 30px;
+        padding: 15px;
     }
     
     header img{
         max-width: 300px;
-    }
-    
-    nav{
-        top: 151px;
     }
     
     nav a{
