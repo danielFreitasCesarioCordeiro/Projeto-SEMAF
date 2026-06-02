@@ -525,6 +525,39 @@ div.parceiros h1{
     left: 5px;
 }
 
+/* ESTILOS PARA CARROSSEL DE PROFISSIONAIS ÚNICO */
+.parceiro-card-unico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--cor4);
+    border-radius: 12px;
+}
+
+.parceiro-foto-unico {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+    object-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo: Aumentar tamanho em desktop */
+@media screen and (min-width: 768px) {
+    .parceiro-foto-unico {
+        max-width: 600px;
+        height: 500px;
+    }
+    
+    .parceiro-card-unico {
+        min-height: 550px;
+    }
+}
+
 /* GANHADORES */
 div.ganhadores h1{
     text-align: center;
@@ -988,8 +1021,18 @@ div.ganhadores h1{
 }
 
 @media screen and (min-width: 768px) {
-    .carousel-container {
+    #parceiroCarousel,
+    #equipCarousel {
         display: none !important;
+    }
+    
+    /* Manter carrossel de profissionais visível em desktop */
+    #profissionaisCarousel {
+        display: block !important;
+    }
+    
+    .carousel-container {
+        display: block !important;
     }
 }
 
@@ -999,7 +1042,8 @@ div.ganhadores h1{
     }
 
     #parceiroCarousel,
-    #equipCarousel {
+    #equipCarousel,
+    #profissionaisCarousel {
         display: block;
     }
 }
