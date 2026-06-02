@@ -558,6 +558,94 @@ div.parceiros h1{
     }
 }
 
+/* ESTILOS PARA CARROSSEL DE EQUIPAMENTOS ÚNICO */
+.equip-card-unico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--cor4);
+    border-radius: 12px;
+}
+
+.equip-foto-unico {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+    object-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo: Aumentar tamanho em desktop */
+@media screen and (min-width: 768px) {
+    .equip-foto-unico {
+        max-width: 600px;
+        height: 500px;
+    }
+    
+    .equip-card-unico {
+        min-height: 550px;
+    }
+}
+
+/* PLANOS */
+.planos {
+    padding: 20px 15px;
+    margin: 20px 0;
+}
+
+.planos h1 {
+    text-align: center;
+    color: var(--cor6);
+    font-size: 1.5rem;
+    margin: 20px 0 30px 0;
+    font-family: var(--fonte-destaque);
+}
+
+.plano-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.plano-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    background-color: var(--cor4);
+    border-radius: 12px;
+}
+
+.plano-imagem {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+    object-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo: Aumentar tamanho em desktop */
+@media screen and (min-width: 768px) {
+    .plano-imagem {
+        max-width: 800px;
+        height: auto;
+    }
+    
+    .plano-card {
+        min-height: auto;
+    }
+}
+
 /* GANHADORES */
 div.ganhadores h1{
     text-align: center;
@@ -1026,8 +1114,9 @@ div.ganhadores h1{
         display: none !important;
     }
     
-    /* Manter carrossel de profissionais visível em desktop */
-    #profissionaisCarousel {
+    /* Manter carrosséis visíveis em desktop */
+    #profissionaisCarousel,
+    #equipCarousel {
         display: block !important;
     }
     
