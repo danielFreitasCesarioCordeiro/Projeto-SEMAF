@@ -1127,13 +1127,13 @@ div.ganhadores h1{
 
 @media screen and (max-width: 767px) {
     .carousel-container {
-        display: block;
+        display: block !important;
     }
 
     #parceiroCarousel,
     #equipCarousel,
     #profissionaisCarousel {
-        display: block;
+        display: block !important;
     }
 }
 
