@@ -534,12 +534,13 @@ div.parceiros h1{
     padding: 20px;
     background-color: var(--cor4);
     border-radius: 12px;
+    min-height: 300px;
 }
 
 .parceiro-foto-unico {
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    max-width: 300px;
+    height: 250px;
     border-radius: 12px;
     object-fit: contain;
     object-position: center;
@@ -567,12 +568,13 @@ div.parceiros h1{
     padding: 20px;
     background-color: var(--cor4);
     border-radius: 12px;
+    min-height: 300px;
 }
 
 .equip-foto-unico {
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    max-width: 300px;
+    height: 250px;
     border-radius: 12px;
     object-fit: contain;
     object-position: center;
@@ -1040,6 +1042,7 @@ div.ganhadores h1{
     margin: 0;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    min-height: 350px;
 }
 
 .carousel-wrapper::-webkit-scrollbar {
@@ -1050,6 +1053,10 @@ div.ganhadores h1{
     flex: 0 0 calc(100% - 10px);
     scroll-snap-align: start;
     min-width: 0;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-controls {
