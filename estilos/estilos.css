@@ -571,34 +571,73 @@ div.parceiros h1{
 /* ESTILOS PARA CARROSSEL DE EQUIPAMENTOS ÚNICO */
 .equip-card-unico {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     padding: 20px;
     background-color: var(--cor4);
     border-radius: 12px;
     min-height: 300px;
+    gap: 16px;
 }
 
 .equip-foto-unico {
     width: 100%;
-    max-width: 300px;
-    height: 250px;
+    max-width: 280px;
+    height: 220px;
     border-radius: 12px;
     object-fit: contain;
     object-position: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.equip-info {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.equip-info .titulo {
+    color: var(--cor6);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-family: var(--fonte-destaque);
+}
+
+.equip-info > p {
+    color: var(--cor6);
+    font-size: 0.9rem;
+    font-family: var(--fonte-normal);
+    margin-bottom: 8px;
+}
+
+.equip-info .descricao summary {
+    cursor: pointer;
+    color: var(--cor1);
+    font-weight: bold;
+    font-family: var(--fonte-normal);
+    font-size: 0.9rem;
+}
+
+.equip-info .descricao p {
+    color: var(--cor6);
+    font-size: 0.9rem;
+    font-family: var(--fonte-normal);
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 8px;
+}
+
 /* Responsivo: Aumentar tamanho em desktop */
 @media screen and (min-width: 768px) {
     .equip-foto-unico {
-        max-width: 600px;
-        height: 500px;
+        max-width: 400px;
+        height: 320px;
     }
     
     .equip-card-unico {
-        min-height: 550px;
+        min-height: 500px;
     }
 }
 
