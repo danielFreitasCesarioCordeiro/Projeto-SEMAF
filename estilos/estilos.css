@@ -205,10 +205,10 @@ div.servicos h1{
 .servico-card .foto{
     width: 100%;
     max-width: 500px;
-    aspect-ratio: 16/9;
-    object-fit: contain;
+    height: auto;
     border-radius: 8px;
     margin: 0 auto;
+    display: block;
 }
 
 .servico-card .projeto-info {
@@ -605,11 +605,8 @@ div.parceiros h1{
 .equip-foto-unico {
     width: 100%;
     max-width: 280px;
-    height: 220px;
+    height: auto;
     border-radius: 12px;
-    object-fit: contain;
-    object-position: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .equip-info {
@@ -653,7 +650,6 @@ div.parceiros h1{
 @media screen and (min-width: 768px) {
     .equip-foto-unico {
         max-width: 400px;
-        height: 320px;
     }
     
     .equip-card-unico {
@@ -1590,6 +1586,7 @@ footer a:hover{
     margin: 0 auto 12px auto;
     display: block;
     object-fit: contain;
+    border-radius: 8px;
 }
 
 .empresa-card:hover {
