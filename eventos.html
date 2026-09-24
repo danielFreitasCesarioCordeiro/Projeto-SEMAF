@@ -42,50 +42,6 @@
             background-color: var(--cor0);
         }
 
-        .evento-galeria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 12px;
-            margin-top: 20px;
-            margin-bottom: 16px;
-        }
-
-        .evento-galeria img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: contain;
-            background-color: var(--cor6);
-        }
-
-        .evento-galeria-sorteio {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 16px;
-        }
-
-        .galeria-coluna-esquerda {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            flex: 1;
-        }
-
-        .galeria-coluna-direita {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            flex: 1;
-        }
-
-        .evento-imagem-sorteio {
-            width: 100%;
-            height: auto;
-            border-radius: 0;
-            object-fit: contain;
-            background-color: var(--cor6);
-        }
-
         .sorteio-foto-carousel {
             width: 100%;
             max-height: 350px;
@@ -140,6 +96,35 @@
     <main>
         <section id="eventos-lista">
             <h1 class="eventos-titulo-principal">Eventos e Sorteios SEMAF</h1>
+
+            <div class="evento">
+                <div class="carousel-container" id="wodWarsCarousel">
+                    <div class="carousel-wrapper" id="wodWarsWrapper">
+                        <div class="carousel-item"><img src="imagens/woodwars1.jpeg" alt="SEMAF patrocinador do WOD Wars Festival 1" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/woodwars2.jpeg" alt="SEMAF patrocinador do WOD Wars Festival 2" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/woodwars3.jpeg" alt="SEMAF patrocinador do WOD Wars Festival 3" class="sorteio-foto-carousel"></div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="wodWarsLeft">❮</button>
+                        <div class="carousel-indicators" id="wodWarsIndicators"></div>
+                        <button class="carousel-btn" id="wodWarsRight">❯</button>
+                    </div>
+                </div>
+                <div class="evento-conteudo">
+                    <span class="evento-data">Ago 2026</span>
+                    <h2 class="evento-titulo">SEMAF Patrocinador do WOD Wars Festival</h2>
+                    <p class="evento-resumo">O SEMAF marcou presença como um dos patrocinadores do WOD Wars Festival, um dos grandes eventos de fitness e crossfit, reunindo atletas de diversas categorias e apaixonados por esporte em uma competição repleta de energia, superação e espírito de equipe. Apoiar iniciativas como essa reforça o compromisso do SEMAF em estar cada vez mais próximo da comunidade e incentivar hábitos de vida saudáveis entre nossos associados.</p>
+                    <span class="evento-categoria">Patrocínio</span>
+                    <span class="evento-categoria">WOD Wars Festival</span>
+                    <span class="evento-categoria">Crossfit</span>
+                    <div class="evento-autor">
+                        <div class="evento-autor-info">
+                            <span class="evento-autor-nome">SEMAF</span>
+                            <span class="evento-autor-cargo">Diretoria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="evento">
                 <div class="carousel-container" id="sorteioFotosCarousel">
@@ -197,10 +182,17 @@
             </div>
 
             <div class="evento">
-                <div class="evento-galeria">
-                    <img src="imagens/Summit.png" alt="Diretoria do SEMAF no Summit Brucker 01">
-                    <img src="imagens/Summit02.jpeg" alt="Diretoria do SEMAF no Summit Brucker 02">
-                    <img src="imagens/Summit03.jpeg" alt="Diretoria do SEMAF no Summit Brucker 03">
+                <div class="carousel-container" id="summitCarousel">
+                    <div class="carousel-wrapper" id="summitWrapper">
+                        <div class="carousel-item"><img src="imagens/Summit.png" alt="Diretoria do SEMAF no Summit Brucker 01" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/Summit02.jpeg" alt="Diretoria do SEMAF no Summit Brucker 02" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/Summit03.jpeg" alt="Diretoria do SEMAF no Summit Brucker 03" class="sorteio-foto-carousel"></div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="summitLeft">❮</button>
+                        <div class="carousel-indicators" id="summitIndicators"></div>
+                        <button class="carousel-btn" id="summitRight">❯</button>
+                    </div>
                 </div>
                 <div class="evento-conteudo">
                     <span class="evento-data">Ago 2026</span>
@@ -219,11 +211,18 @@
             </div>
 
             <div class="evento">
-                <div class="evento-galeria">
-                    <img src="imagens/eventodeRecife01.png" alt="Diretoria do SEMAF em visita a Recife 01">
-                    <img src="imagens/eventodeRecife02.png" alt="Diretoria do SEMAF em visita a Recife 02">
-                    <img src="imagens/eventoderecife03.png" alt="Diretoria do SEMAF em visita a Recife 03">
-                    <img src="imagens/eventodeRecife04.png" alt="Diretoria do SEMAF em visita a Recife 04">
+                <div class="carousel-container" id="recifeCarousel">
+                    <div class="carousel-wrapper" id="recifeWrapper">
+                        <div class="carousel-item"><img src="imagens/eventodeRecife01.png" alt="Diretoria do SEMAF em visita a Recife 01" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/eventodeRecife02.png" alt="Diretoria do SEMAF em visita a Recife 02" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/eventoderecife03.png" alt="Diretoria do SEMAF em visita a Recife 03" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/eventodeRecife04.png" alt="Diretoria do SEMAF em visita a Recife 04" class="sorteio-foto-carousel"></div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="recifeLeft">❮</button>
+                        <div class="carousel-indicators" id="recifeIndicators"></div>
+                        <button class="carousel-btn" id="recifeRight">❯</button>
+                    </div>
                 </div>
                 <div class="evento-conteudo">
                     <span class="evento-data">Mai 2026</span>
@@ -276,16 +275,19 @@
             </div>
 
             <div class="evento">
-                <div class="evento-galeria-sorteio">
-                    <div class="galeria-coluna-esquerda">
-                        <img src="imagens/capela.png" alt="Sorteio Natal - Capela" class="evento-imagem-sorteio">
-                        <img src="imagens/lista.png" alt="Sorteio Natal - Lista" class="evento-imagem-sorteio">
+                <div class="carousel-container" id="sorteioNatalCarousel">
+                    <div class="carousel-wrapper" id="sorteioNatalWrapper">
+                        <div class="carousel-item"><img src="imagens/capela.png" alt="Sorteio Natal - Capela" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/lista.png" alt="Sorteio Natal - Lista" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/sorteio01.png" alt="Sorteio Natal 01" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/sorteio02.png" alt="Sorteio Natal 02" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/sorteio03.png" alt="Sorteio Natal 03" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/sorteio04.png" alt="Sorteio Natal 04" class="sorteio-foto-carousel"></div>
                     </div>
-                    <div class="galeria-coluna-direita">
-                        <img src="imagens/sorteio01.png" alt="Sorteio Natal 01" class="evento-imagem-sorteio">
-                        <img src="imagens/sorteio02.png" alt="Sorteio Natal 02" class="evento-imagem-sorteio">
-                        <img src="imagens/sorteio03.png" alt="Sorteio Natal 03" class="evento-imagem-sorteio">
-                        <img src="imagens/sorteio04.png" alt="Sorteio Natal 04" class="evento-imagem-sorteio">
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="sorteioNatalLeft">❮</button>
+                        <div class="carousel-indicators" id="sorteioNatalIndicators"></div>
+                        <button class="carousel-btn" id="sorteioNatalRight">❯</button>
                     </div>
                 </div>
                 <div class="evento-conteudo">
@@ -599,6 +601,10 @@
 
             initCarousel('ganhadoresCarousel', 'ganhadoresWrapper', 'ganhadoresLeft', 'ganhadoresRight', 'ganhadoresIndicators');
             initCarousel('sorteioFotosCarousel', 'sorteioFotosWrapper', 'sorteioFotosLeft', 'sorteioFotosRight', 'sorteioFotosIndicators');
+            initCarousel('wodWarsCarousel', 'wodWarsWrapper', 'wodWarsLeft', 'wodWarsRight', 'wodWarsIndicators');
+            initCarousel('summitCarousel', 'summitWrapper', 'summitLeft', 'summitRight', 'summitIndicators');
+            initCarousel('recifeCarousel', 'recifeWrapper', 'recifeLeft', 'recifeRight', 'recifeIndicators');
+            initCarousel('sorteioNatalCarousel', 'sorteioNatalWrapper', 'sorteioNatalLeft', 'sorteioNatalRight', 'sorteioNatalIndicators');
         });
     </script>
 </body>
