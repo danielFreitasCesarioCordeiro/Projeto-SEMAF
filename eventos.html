@@ -85,6 +85,14 @@
             object-fit: contain;
             background-color: var(--cor6);
         }
+
+        .sorteio-foto-carousel {
+            width: 100%;
+            max-height: 350px;
+            border-radius: 8px;
+            object-fit: contain;
+            background-color: var(--cor6);
+        }
         
         @media screen and (min-width: 768px) {
             #eventos-lista {
@@ -132,6 +140,42 @@
     <main>
         <section id="eventos-lista">
             <h1 class="eventos-titulo-principal">Eventos e Sorteios SEMAF</h1>
+
+            <div class="evento">
+                <div class="carousel-container" id="sorteioFotosCarousel">
+                    <div class="carousel-wrapper" id="sorteioFotosWrapper">
+                        <div class="carousel-item"><img src="imagens/ganhadores.jpeg" alt="Ganhadores do Sorteio Dia dos Pais" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/ganhadorP1.jpeg" alt="Ganhador do Sorteio Dia dos Pais 1" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/ganhadorP2.jpeg" alt="Ganhador do Sorteio Dia dos Pais 2" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/ganhadorP3.jpeg" alt="Ganhador do Sorteio Dia dos Pais 3" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/ganhadorP4.jpeg" alt="Ganhador do Sorteio Dia dos Pais 4" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/ganhadorP5.jpeg" alt="Ganhador do Sorteio Dia dos Pais 5" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/ganhadorP6.jpeg" alt="Ganhador do Sorteio Dia dos Pais 6" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/ganhadorP7.jpeg" alt="Ganhador do Sorteio Dia dos Pais 7" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><img src="imagens/ganhadorP8.jpeg" alt="Ganhador do Sorteio Dia dos Pais 8" class="sorteio-foto-carousel"></div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="sorteioFotosLeft">❮</button>
+                        <div class="carousel-indicators" id="sorteioFotosIndicators"></div>
+                        <button class="carousel-btn" id="sorteioFotosRight">❯</button>
+                    </div>
+                </div>
+                <div class="evento-conteudo">
+                    <span class="evento-data">Ago 2026</span>
+                    <h2 class="evento-titulo">Sorteio Dia dos Pais - Entrega dos Prêmios</h2>
+                    <p class="evento-resumo">O Sorteio de Dia dos Pais SEMAF já aconteceu! Confira nas fotos o momento da entrega dos prêmios aos nossos associados sorteados. Foi uma alegria poder celebrar essa data especial retribuindo o carinho e a confiança de quem faz parte da família SEMAF.</p>
+                    <span class="evento-categoria">Sorteio</span>
+                    <span class="evento-categoria">Dia dos Pais</span>
+                    <span class="evento-categoria">Ganhadores</span>
+                    <a href="#ganhadores" class="evento-link">Ver lista completa de ganhadores →</a>
+                    <div class="evento-autor">
+                        <div class="evento-autor-info">
+                            <span class="evento-autor-nome">SEMAF</span>
+                            <span class="evento-autor-cargo">Organização de Eventos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="evento">
                 <img src="imagens/diadospaisEventos.PNG" alt="Homenagem do SEMAF no Dia dos Pais" class="evento-imagem">
@@ -247,10 +291,9 @@
                 <div class="evento-conteudo">
                     <span class="evento-data">15 Dez 2025</span>
                     <h2 class="evento-titulo">Grande Sorteio de Natal SEMAF 2025</h2>
-                    <p class="evento-resumo">Participe do nosso tradicional sorteio de Natal! Prêmios incríveis incluindo cestas básicas, eletrodomésticos e vouchers de compras. Todos os associados do SEMAF concorrem automaticamente. Sorteio será realizado no dia 20 de dezembro, às 18h, em nossa sede.</p>
+                    <p class="evento-resumo">O nosso tradicional sorteio de Natal já aconteceu! Foram distribuídos prêmios incríveis, incluindo cestas básicas, eletrodomésticos e vouchers de compras, entre os associados do SEMAF que concorreram automaticamente. Agradecemos a participação de todos e já estamos nos preparando para as próximas edições.</p>
                     <span class="evento-categoria">Sorteio</span>
                     <span class="evento-categoria">Natal</span>
-                    <a href="#" class="evento-link">Saiba como participar →</a>
                     <div class="evento-autor">
                         <div class="evento-autor-info">
                             <span class="evento-autor-nome">SEMAF</span>
@@ -281,199 +324,151 @@
             <!-- Dois eventos removidos conforme solicitado -->
 
             <div class="ganhadores" id="ganhadores">
-                <h1>Ganhadores do Sorteio</h1>
+                <h1>Ganhadores - Sorteio Dia dos Pais 2026</h1>
                 <div class="carousel-container ganhadores-carousel" id="ganhadoresCarousel">
                     <div class="carousel-wrapper" id="ganhadoresWrapper">
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Itamar da Silva Coutinho</h3>
-                                <p class="premio">Prêmio: Ar Fryer</p>
-                                <p class="data">Número: 19146</p>
-                                <p class="data">Bairro: Barreiro</p>
+                                <h3 class="titulo">Helia Ramos Pizetta</h3>
+                                <p class="premio">Ferro de passar</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Maria Adriana S. da Silva</h3>
-                                <p class="premio">Prêmio: Liquidificador</p>
-                                <p class="data">Número: 23442</p>
-                                <p class="data">Bairro: Vila dos Coroados</p>
+                                <h3 class="titulo">Abdallah Mohamed Slaybi</h3>
+                                <p class="premio">Cafeteira</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Elcio Muniz Fernandes</h3>
-                                <p class="premio">Prêmio: Liquidificador</p>
-                                <p class="data">Número: 13021</p>
-                                <p class="data">Bairro: Penha</p>
+                                <h3 class="titulo">Fidelis Macedo</h3>
+                                <p class="premio">Ferro de passar</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Ronaldo de Souza Barcelos</h3>
-                                <p class="premio">Prêmio: Ferro Elétrico</p>
-                                <p class="data">Número: 11732</p>
-                                <p class="data">Bairro: Barão de Macaúbas</p>
+                                <h3 class="titulo">Rosa Vieira de Souza</h3>
+                                <p class="premio">Batedeira</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Valdemar Cortes Macedo</h3>
-                                <p class="premio">Prêmio: Ferro Elétrico</p>
-                                <p class="data">Número: 7354</p>
-                                <p class="data">Bairro: Barão de Macaúbas</p>
+                                <h3 class="titulo">Candida Vanessa Guimarães Fernandes</h3>
+                                <p class="premio">Chaleira</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Simarely Pegoral Mello Cordeiro</h3>
-                                <p class="premio">Prêmio: Ferro Elétrico</p>
-                                <p class="data">Número: 10918</p>
-                                <p class="data">Bairro: Pureza</p>
+                                <h3 class="titulo">Alivertino Inacio</h3>
+                                <p class="premio">Cafeteira</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Erli Merlim de Oliveira</h3>
-                                <p class="premio">Prêmio: Ventilador</p>
-                                <p class="data">Número: 12613</p>
-                                <p class="data">Bairro: Nova Divinéia</p>
+                                <h3 class="titulo">Elielza Alves do Nascimento</h3>
+                                <p class="premio">Máquina de cortar cabelo</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Neusa Lopes Izidoro</h3>
-                                <p class="premio">Prêmio: Ventilador</p>
-                                <p class="data">Número: 22184</p>
-                                <p class="data">Bairro: Montese</p>
+                                <h3 class="titulo">Ivanete Azeredo Freixo</h3>
+                                <p class="premio">Batedeira</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Amarita Ribeiro da Silva</h3>
-                                <p class="premio">Prêmio: Ventilador</p>
-                                <p class="data">Número: 16421</p>
-                                <p class="data">Bairro: Pureza</p>
+                                <h3 class="titulo">Ronaldo Soares Ribeiro</h3>
+                                <p class="premio">Ferro de passar</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Edinéa Maria Poubel Sodre</h3>
-                                <p class="premio">Prêmio: Sanduicheira</p>
-                                <p class="data">Número: 2676</p>
-                                <p class="data">Bairro: Centro</p>
+                                <h3 class="titulo">Marilane Leal Honorato</h3>
+                                <p class="premio">Chaleira</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Marcos Vinicius de Souza</h3>
-                                <p class="premio">Prêmio: Secador de Cabelo</p>
-                                <p class="data">Número: 20527</p>
-                                <p class="data">Bairro: Jonas de Almeida e Silva</p>
+                                <h3 class="titulo">Alcinete da Silva Silveira Peres</h3>
+                                <p class="premio">Máquina de cortar cabelo</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Maria José Ribeiro de Oliveira</h3>
-                                <p class="premio">Prêmio: Panela de Arroz</p>
-                                <p class="data">Número: 14100</p>
-                                <p class="data">Bairro: Vila dos Coroados</p>
+                                <h3 class="titulo">Carlos Creiler Vilaça</h3>
+                                <p class="premio">Sanduicheira</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Maria da Conceição Silva</h3>
-                                <p class="premio">Prêmio: Cafeteira</p>
-                                <p class="data">Número: 22612</p>
-                                <p class="data">Bairro: Vila dos Coroados</p>
+                                <h3 class="titulo">Luiz Carlos Feliciano</h3>
+                                <p class="premio">Ventilador</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Maria Izabel Freixo Souza</h3>
-                                <p class="premio">Prêmio: Cafeteira</p>
-                                <p class="data">Número: 623</p>
-                                <p class="data">Bairro: Esperança</p>
+                                <h3 class="titulo">Antonio Carlos Marketti do Couto</h3>
+                                <p class="premio">Air fryer</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Sonia Regina Miranda Cortes</h3>
-                                <p class="premio">Prêmio: Cafeteira</p>
-                                <p class="data">Número: 2873</p>
-                                <p class="data">Bairro: São Vicente de Paula</p>
+                                <h3 class="titulo">Antonio Ferreira Lopes</h3>
+                                <p class="premio">Liquidificador</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">José Ribeiro</h3>
-                                <p class="premio">Prêmio: Micro-ondas</p>
-                                <p class="data">Número: 7684</p>
-                                <p class="data">Bairro: Vila dos Coroados</p>
+                                <h3 class="titulo">Gelcinea da Silva Alves</h3>
+                                <p class="premio">Mini processador</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Maria Elisa Souza Santos</h3>
-                                <p class="premio">Prêmio: Mop</p>
-                                <p class="data">Número: 3232</p>
-                                <p class="data">Bairro: Barão de Macaúbas</p>
+                                <h3 class="titulo">Patricia Pessanha Silva Miranda</h3>
+                                <p class="premio">MOP</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Elza Maria de Souza</h3>
-                                <p class="premio">Prêmio: Aspirador de Pó</p>
-                                <p class="data">Número: 5291</p>
-                                <p class="data">Bairro: Centro</p>
+                                <h3 class="titulo">Carli Rodrigues Barreto Carneiro</h3>
+                                <p class="premio">Panela elétrica</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Nelito Dias da Costa</h3>
-                                <p class="premio">Prêmio: Aspirador Robô</p>
-                                <p class="data">Número: 12405</p>
-                                <p class="data">Bairro: Colônia</p>
+                                <h3 class="titulo">Maria Martins Gomes</h3>
+                                <p class="premio">Kit churrasco</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Carlos Alberto de Oliveira Stoller</h3>
-                                <p class="premio">Prêmio: Smart TV</p>
-                                <p class="data">Número: 719</p>
-                                <p class="data">Bairro: Vila dos Coroados</p>
+                                <h3 class="titulo">Selma Perci Peixoto Alves</h3>
+                                <p class="premio">Panela elétrica</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Rosenilda Merendaz de Mendonca</h3>
-                                <p class="premio">Prêmio: Parafusadeira</p>
-                                <p class="data">Número: 944</p>
-                                <p class="data">Bairro: Ipuca</p>
+                                <h3 class="titulo">Edilsa Rodrigues Seixas Pessanha</h3>
+                                <p class="premio">Sanduicheira</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Luciana do Nascimento Silva Castro</h3>
-                                <p class="premio">Prêmio: Churrasqueira Portátil</p>
-                                <p class="data">Número: 18408</p>
-                                <p class="data">Bairro: Gamboa</p>
+                                <h3 class="titulo">Ercy Henrique Cordeiro</h3>
+                                <p class="premio">Ventilador</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Jodir de Mattos Alves</h3>
-                                <p class="premio">Prêmio: Chaleira Elétrica</p>
-                                <p class="data">Número: 4052</p>
-                                <p class="data">Bairro: Ipuca</p>
+                                <h3 class="titulo">Fidelis Asssi da Silva</h3>
+                                <p class="premio">Liquidificador</p>
                             </div>
                         </div>
                         <div class="carousel-item ganhador-card">
                             <div class="ganhador-info">
-                                <h3 class="titulo">Maria José Lopes Pontes</h3>
-                                <p class="premio">Prêmio: Kit Sousplat de Natal</p>
-                                <p class="data">Número: 13487</p>
-                                <p class="data">Bairro: Penha</p>
+                                <h3 class="titulo">Lia Mara Fernandes dos Santos</h3>
+                                <p class="premio">Mini processador</p>
                             </div>
                         </div>
                     </div>
@@ -603,6 +598,7 @@
             }
 
             initCarousel('ganhadoresCarousel', 'ganhadoresWrapper', 'ganhadoresLeft', 'ganhadoresRight', 'ganhadoresIndicators');
+            initCarousel('sorteioFotosCarousel', 'sorteioFotosWrapper', 'sorteioFotosLeft', 'sorteioFotosRight', 'sorteioFotosIndicators');
         });
     </script>
 </body>
