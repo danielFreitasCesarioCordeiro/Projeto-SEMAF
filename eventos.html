@@ -49,6 +49,18 @@
             object-fit: contain;
             background-color: var(--cor6);
         }
+
+        /* Vídeos dentro do carrossel */
+        .video-carousel {
+            display: block;
+            height: 350px;
+            width: auto;
+            max-width: 100%;
+            margin: 0 auto;
+            object-fit: contain;
+            border-radius: 8px;
+            background-color: var(--cor6);
+        }
         
         @media screen and (min-width: 768px) {
             #eventos-lista {
@@ -111,6 +123,36 @@
                         <div class="evento-autor-info">
                             <span class="evento-autor-nome">SEMAF</span>
                             <span class="evento-autor-cargo">Com carinho, a Família SEMAF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evento">
+                <div class="carousel-container" id="testeQueimaCarousel">
+                    <div class="carousel-wrapper" id="testeQueimaWrapper">
+                        <div class="carousel-item"><img src="imagens/testedequeima.jpg" alt="Equipe técnica acompanhando o teste de queima no crematório do SEMAF" class="sorteio-foto-carousel"></div>
+                        <div class="carousel-item"><video class="video-carousel" controls muted loop playsinline preload="metadata" aria-label="Teste de queima no crematório do SEMAF - vídeo 1"><source src="imagens/testedequeima1.mov" type="video/mp4"><source src="imagens/testedequeima1.mov" type="video/quicktime">Seu navegador não suporta vídeos.</video></div>
+                        <div class="carousel-item"><video class="video-carousel" controls muted loop playsinline preload="metadata" aria-label="Teste de queima no crematório do SEMAF - vídeo 2"><source src="imagens/testedequeima2.mov" type="video/mp4"><source src="imagens/testedequeima2.mov" type="video/quicktime">Seu navegador não suporta vídeos.</video></div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="testeQueimaLeft">❮</button>
+                        <div class="carousel-indicators" id="testeQueimaIndicators"></div>
+                        <button class="carousel-btn" id="testeQueimaRight">❯</button>
+                    </div>
+                </div>
+                <div class="evento-conteudo">
+                    <span class="evento-data">26 Out 2026</span>
+                    <h2 class="evento-titulo">Teste de Queima no Crematório SEMAF</h2>
+                    <p class="evento-resumo">No dia 26 de outubro, o SEMAF realizou o teste de queima do seu crematório, mais uma etapa importante rumo à conclusão do projeto. A equipe técnica acompanhou de perto todo o processo, monitorando temperaturas e o desempenho do equipamento para garantir que tudo funcione com total segurança, eficiência e dentro das normas.</p>
+                    <p class="evento-resumo">Esse avanço reforça o compromisso do SEMAF em oferecer às famílias um serviço completo, moderno e realizado com todo o respeito e cuidado que esse momento exige.</p>
+                    <span class="evento-categoria">Crematório</span>
+                    <span class="evento-categoria">Teste de Queima</span>
+                    <span class="evento-categoria">Visita Técnica</span>
+                    <div class="evento-autor">
+                        <div class="evento-autor-info">
+                            <span class="evento-autor-nome">SEMAF</span>
+                            <span class="evento-autor-cargo">Diretoria de Obras</span>
                         </div>
                     </div>
                 </div>
@@ -624,6 +666,7 @@
             initCarousel('summitCarousel', 'summitWrapper', 'summitLeft', 'summitRight', 'summitIndicators');
             initCarousel('recifeCarousel', 'recifeWrapper', 'recifeLeft', 'recifeRight', 'recifeIndicators');
             initCarousel('sorteioNatalCarousel', 'sorteioNatalWrapper', 'sorteioNatalLeft', 'sorteioNatalRight', 'sorteioNatalIndicators');
+            initCarousel('testeQueimaCarousel', 'testeQueimaWrapper', 'testeQueimaLeft', 'testeQueimaRight', 'testeQueimaIndicators');
         });
     </script>
 </body>
